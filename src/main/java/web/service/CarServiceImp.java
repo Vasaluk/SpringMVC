@@ -15,7 +15,7 @@ public class CarServiceImp implements CarService{
         count = count <= 0 ? 0 : (count = count >= 5 ? 5 : count);
 
         for (int i = 0; i < count; i++) {
-            cars.add(new Car("toyota" + i + 1, "a11" + i + 1 + "aa", i + 1));
+            cars.add(new Car("toyota" + (i + 1), "a11" + (i + 1) + "aa", i + 1));
         }
         return cars;
     }
